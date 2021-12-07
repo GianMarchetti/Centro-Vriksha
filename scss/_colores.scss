@@ -1,0 +1,18 @@
+/*COLORES*/
+$blanco: #F5F5F5;
+$lila: rgba(245, 217, 245, 0.623);
+
+.purple{
+    color: purple;
+}
+.blanco{
+    color: $blanco;
+}
+.fondoHeader{
+    background-color: $blanco;
+}
+.fondoLila{
+    background-color: $lila;
+}
+
+

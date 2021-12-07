@@ -1,0 +1,112 @@
+/*MEDIA QUERIES*/
+
+
+
+/*SMARTPHONE*/
+@media (max-width:576px){
+    .inicioFoto{
+        background-image: url(../imagenes/inicioFotocelu.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+    h1{
+        font-size: 350%;
+        color: whitesmoke;
+        text-align: center;
+    }
+    h2{
+        color:purple;
+        text-align: center;
+        font-size: 25px;
+    }
+    #vi{
+        font-size: 320%;
+    }
+    .l{
+        font-size: 10px;
+    }
+    .sobremiFoto{
+        background-image: url(../imagenes/karen5celu.png);
+        background-size: cover;
+        height: 100vh;
+    }
+    .clasesYtalleresFoto{
+        background-image: url(../imagenes/clasesYtalleresFotomobile.jpg);
+        background-size: cover;
+        height: 120vh;
+    }
+    #pk4{
+        text-align: center;
+    }
+    .row-cols-1 > * {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .indumentariaFoto{
+        background-image: url(../imagenes/indumentariaFotocelu.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+    .contactoFoto{
+        background-image: url(../imagenes/contactoFotocelu.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+    #VI{
+        font-size: 250%;
+    }
+
+
+    
+
+
+
+}
+
+
+/*TABLET*/
+@media (min-width:577px) and (max-width:1000px){
+    .inicioFoto{
+        background-image: url(../imagenes/inicioFototablet.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+    .sobremiFoto{
+        background-image: url(../imagenes/karen5tablet.png);
+        background-size: cover;
+        height: 100vh;
+    }
+    .clasesYtalleresFoto{
+        background-image: url(../imagenes/clasesYtalleresFototablet.jpg);
+        background-size: cover;
+        height: 120vh;
+    }
+    h1{
+        font-size: 400%;
+        color: whitesmoke;
+        text-align: center;
+    
+    }
+    h2{
+        color:purple;
+        text-align: center;
+        font-size: 30px;
+    }
+    .l{
+        font-size: 13px;
+    }
+    .row-cols-1 > * {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .indumentariaFoto{
+        background-image: url(../imagenes/indumentariaFototablet.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+    .contactoFoto{
+        background-image: url(../imagenes/contactoFototablet.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+}

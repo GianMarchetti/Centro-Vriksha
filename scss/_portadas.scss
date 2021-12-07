@@ -1,0 +1,14 @@
+/*Fotos iniciales de cada página*/
+
+
+
+@each $pag in inicioFoto, sobremiFoto, clasesYtalleresFoto, indumentariaFoto, contactoFoto{
+    .#{$pag}{
+        background-image: url(../imagenes/#{$pag}.jpg);
+        background-size: cover ;
+        height: 120vh;
+    }
+}
+
+
+/*-----------------------------------------------*/

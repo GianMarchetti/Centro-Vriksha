@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/*COLORES*/
+.purple {
+  color: purple; }
+
+.blanco {
+  color: #F5F5F5; }
+
+.fondoHeader {
+  background-color: #F5F5F5; }
+
+.fondoLila {
+  background-color: rgba(245, 217, 245, 0.623); }
+
+/*Fotos iniciales de cada página*/
+.inicioFoto {
+  background-image: url(../imagenes/inicioFoto.jpg);
+  background-size: cover;
+  height: 120vh; }
+
+.sobremiFoto {
+  background-image: url(../imagenes/sobremiFoto.jpg);
+  background-size: cover;
+  height: 120vh; }
+
+.clasesYtalleresFoto {
+  background-image: url(../imagenes/clasesYtalleresFoto.jpg);
+  background-size: cover;
+  height: 120vh; }
+
+.indumentariaFoto {
+  background-image: url(../imagenes/indumentariaFoto.jpg);
+  background-size: cover;
+  height: 120vh; }
+
+.contactoFoto {
+  background-image: url(../imagenes/contactoFoto.jpg);
+  background-size: cover;
+  height: 120vh; }
+
+/*-----------------------------------------------*/
+/*Animaciones*/
+/*CENTRO VRIKSHA*/
+.cVrikshaAnimacion {
+  animation-name: agrandar;
+  animation-duration: 3s;
+  animation-iteration-count: 1; }
+
+@keyframes agrandar {
+  0% {
+    transform: scale(100%); }
+  50% {
+    transform: scale(200%); }
+  100% {
+    transform: scale(100%); } }
+
+/*nav*/
+#nav div ul li::after {
+  content: " ";
+  width: 0px;
+  height: 8%;
+  display: block;
+  background-color: purple;
+  transition: .4s; }
+
+#nav div ul li:hover::after {
+  width: 100%; }
+
+/*clases*/
+.aparecerAnimacion {
+  animation-name: aparecer;
+  animation-duration: 3s;
+  animation-iteration-count: 1; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+/*talleres*/
+.talleresAnimacion {
+  animation-name: talleres;
+  animation-duration: 3s;
+  animation-iteration-count: 1; }
+
+@keyframes talleres {
+  0% {
+    transform: translateX(2000px); }
+  100% {
+    transform: translateX(0px); } }
+
+/*MEDIA QUERIES*/
+/*SMARTPHONE*/
+@media (max-width: 576px) {
+  .inicioFoto {
+    background-image: url(../imagenes/inicioFotocelu.jpg);
+    background-size: cover;
+    height: 100vh; }
+  h1 {
+    font-size: 350%;
+    color: whitesmoke;
+    text-align: center; }
+  h2 {
+    color: purple;
+    text-align: center;
+    font-size: 25px; }
+  #vi {
+    font-size: 320%; }
+  .l {
+    font-size: 10px; }
+  .sobremiFoto {
+    background-image: url(../imagenes/karen5celu.png);
+    background-size: cover;
+    height: 100vh; }
+  .clasesYtalleresFoto {
+    background-image: url(../imagenes/clasesYtalleresFotomobile.jpg);
+    background-size: cover;
+    height: 120vh; }
+  #pk4 {
+    text-align: center; }
+  .row-cols-1 > * {
+    flex: 0 0 auto;
+    width: 100%; }
+  .indumentariaFoto {
+    background-image: url(../imagenes/indumentariaFotocelu.jpg);
+    background-size: cover;
+    height: 100vh; }
+  .contactoFoto {
+    background-image: url(../imagenes/contactoFotocelu.jpg);
+    background-size: cover;
+    height: 100vh; }
+  #VI {
+    font-size: 250%; } }
+
+/*TABLET*/
+@media (min-width: 577px) and (max-width: 1000px) {
+  .inicioFoto {
+    background-image: url(../imagenes/inicioFototablet.jpg);
+    background-size: cover;
+    height: 100vh; }
+  .sobremiFoto {
+    background-image: url(../imagenes/karen5tablet.png);
+    background-size: cover;
+    height: 100vh; }
+  .clasesYtalleresFoto {
+    background-image: url(../imagenes/clasesYtalleresFototablet.jpg);
+    background-size: cover;
+    height: 120vh; }
+  h1 {
+    font-size: 400%;
+    color: whitesmoke;
+    text-align: center; }
+  h2 {
+    color: purple;
+    text-align: center;
+    font-size: 30px; }
+  .l {
+    font-size: 13px; }
+  .row-cols-1 > * {
+    flex: 0 0 auto;
+    width: 50%; }
+  .indumentariaFoto {
+    background-image: url(../imagenes/indumentariaFototablet.jpg);
+    background-size: cover;
+    height: 100vh; }
+  .contactoFoto {
+    background-image: url(../imagenes/contactoFototablet.jpg);
+    background-size: cover;
+    height: 100vh; } }
+
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+.logo {
+  width: 60px;
+  align-items: center; }
+
+.margin {
+  margin-top: 1%; }
+
+.padding {
+  padding: 1%; }
+
+.nowrap {
+  flex-wrap: nowrap; }
+
+header {
+  top: 0;
+  position: sticky;
+  z-index: 5;
+  background-color: #F5F5F5; }
+
+p {
+  margin: 1%; }
+
+h1 {
+  font-size: 500%;
+  color: #F5F5F5;
+  text-align: center; }
+
+h2 {
+  color: purple;
+  text-align: center;
+  font-size: 35px; }
+
+.heightCarousel {
+  height: 100vh; }
+
+footer {
+  background-color: #F5F5F5; }
+
+.l {
+  font-size: 16px; }
+
+.ifra {
+  width: 100%;
+  height: 550px; }
+
+.ifr {
+  width: 80%;
+  height: 90%; }
+
+.clasesYoga {
+  box-sizing: border-box;
+  margin-bottom: 1%;
+  padding: 10px;
+  border: solid 2px purple;
+  background-color: rgba(245, 217, 245, 0.623);
+  text-align: center; }
+
+.map {
+  width: "700px";
+  height: "500px"; }

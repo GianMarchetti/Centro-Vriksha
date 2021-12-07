@@ -1,0 +1,58 @@
+/*Animaciones*/
+/*CENTRO VRIKSHA*/
+.cVrikshaAnimacion{
+    animation-name: agrandar;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes agrandar{
+    0%{
+        transform: scale(100%);
+    }
+    50%{
+        transform: scale(200%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+/*nav*/
+#nav div ul li::after{
+    content: " ";
+    width: 0px;
+    height: 8%;
+    display: block;
+    background-color: purple;
+    transition: .4s;
+}
+#nav div ul li:hover::after{
+    width: 100%;
+}
+/*clases*/
+.aparecerAnimacion{
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;;
+    }
+}
+/*talleres*/
+.talleresAnimacion{
+    animation-name: talleres;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes talleres{
+    0%{
+        transform: translateX(2000px)
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
